@@ -36,7 +36,7 @@ def main():
         records += len(new_crawl)
         posts += new_crawl
 
-    with xlsxwriter.Workbook('test.xlsx') as workbook:
+    with xlsxwriter.Workbook('result.xlsx') as workbook:
         worksheet = workbook.add_worksheet()
 
         worksheet.write_row(
